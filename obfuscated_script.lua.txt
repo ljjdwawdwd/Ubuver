@@ -1,0 +1,685 @@
+-- _nczutvzr UI Script
+-- Version 1.0
+-- Entwickelt fÃ¼r die meisten Roblox-Spiele
+
+local _nczutvzr = loadstring(game:HttpGet('https://sirius.menu/rayfield'))()
+
+-- Hauptfenster erstellen
+local _rbtvrz0n = _nczutvzr:CreateWindow({
+    Name = (_h4tbt9u0() local _={80,114,101,109,105,117,109,32,72,117,98,32,124,32,118,49,46,48} return string.char(table.unpack(_)) end)(),
+    LoadingTitle = (_h4tbt9u0() local _={80,114,101,109,105,117,109,32,69,120,112,101,114,105,101,110,99,101} return string.char(table.unpack(_)) end)(),
+    LoadingSubtitle = (_h4tbt9u0() local _={98,121,32,69,120,112,101,114,116,32,68,101,118,101,108,111,112,101,114,115} return string.char(table.unpack(_)) end)(),
+    ConfigurationSaving = {
+        Enabled = true,
+        FolderName = (_h4tbt9u0() local _={80,114,101,109,105,117,109,72,117,98,67,111,110,102,105,103} return string.char(table.unpack(_)) end)(),
+        FileName = (_h4tbt9u0() local _={83,101,116,116,105,110,103,115,46,106,115,111,110} return string.char(table.unpack(_)) end)()
+    },
+    Discord = {
+        Enabled = true,
+        Invite = (_h4tbt9u0() local _={100,105,115,99,111,114,100,46,103,103,47,101,120,97,109,112,108,101,115,101,114,118,101,114} return string.char(table.unpack(_)) end)(),
+        RememberJoins = true
+    },
+    KeySystem = true,
+    KeySettings = {
+        Title = (_h4tbt9u0() local _={80,114,101,109,105,117,109,32,72,117,98} return string.char(table.unpack(_)) end)(),
+        Subtitle = (_h4tbt9u0() local _={75,101,121,32,83,121,115,116,101,109} return string.char(table.unpack(_)) end)(),
+        Note = (_h4tbt9u0() local _={74,111,105,110,32,116,104,101,32,68,105,115,99,111,114,100,32,102,111,114,32,107,101,121} return string.char(table.unpack(_)) end)(),
+        FileName = (_h4tbt9u0() local _={80,114,101,109,105,117,109,72,117,98,75,101,121} return string.char(table.unpack(_)) end)(),
+        SaveKey = true,
+        GrabKeyFromSite = false,
+        Key = (_h4tbt9u0() local _={80,82,69,77,73,85,77,49,50,51} return string.char(table.unpack(_)) end)()
+    }
+})
+
+-- Tabs erstellen
+local _gpcbtao8 = _rbtvrz0n:CreateTab((_h4tbt9u0() local _={77,97,105,110} return string.char(table.unpack(_)) end)(), 4483362458) -- Haus-Icon
+local _ypawskj5 = _rbtvrz0n:CreateTab((_h4tbt9u0() local _={67,111,109,98,97,116} return string.char(table.unpack(_)) end)(), 7733960981) -- Schwert-Icon
+local _hh78bfy1 = _rbtvrz0n:CreateTab((_h4tbt9u0() local _={80,108,97,121,101,114} return string.char(table.unpack(_)) end)(), 9753762469) -- Avatar-Icon
+local _hn1g909s = _rbtvrz0n:CreateTab((_h4tbt9u0() local _={84,101,108,101,112,111,114,116} return string.char(table.unpack(_)) end)(), 3944680095) -- Teleport-Icon
+local _zev63q9i = _rbtvrz0n:CreateTab((_h4tbt9u0() local _={70,97,114,109} return string.char(table.unpack(_)) end)(), 6034287593) -- Farm-Icon
+local _ca79jjpi = _rbtvrz0n:CreateTab((_h4tbt9u0() local _={77,105,115,99} return string.char(table.unpack(_)) end)(), 9749315530) -- Einstellungen-Icon
+local _tlkphb0s = _rbtvrz0n:CreateTab((_h4tbt9u0() local _={83,101,116,116,105,110,103,115} return string.char(table.unpack(_)) end)(), 6023426915) -- Zahnrad-Icon
+
+-- Funktionen fÃ¼r spÃ¤tere Verwendung
+local _h4tbt9u0 Notify(title, content, duration)
+    _nczutvzr:Notify({
+        Title = title,
+        Content = content,
+        Duration = duration or 6.5,
+        Image = 4483362458,
+        Actions = {
+            Ignore = {
+                Name = (_h4tbt9u0() local _={79,107,97,121} return string.char(table.unpack(_)) end)(),
+                Callback = _h4tbt9u0()
+                end
+            },
+        },
+    })
+end
+
+-- Hilfsvariablen
+local _eyyuryf4 = game:GetService((_h4tbt9u0() local _={80,108,97,121,101,114,115} return string.char(table.unpack(_)) end)())
+local _q5px9ryh = _eyyuryf4._q5px9ryh
+local _g545cyad = game:GetService((_h4tbt9u0() local _={82,117,110,83,101,114,118,105,99,101} return string.char(table.unpack(_)) end)())
+local _ql29uwhe = game:GetService((_h4tbt9u0() local _={85,115,101,114,73,110,112,117,116,83,101,114,118,105,99,101} return string.char(table.unpack(_)) end)())
+local _ttum3krw = game:GetService((_h4tbt9u0() local _={87,111,114,107,115,112,97,99,101} return string.char(table.unpack(_)) end)())
+local _z4ntaz0t = game:GetService((_h4tbt9u0() local _={76,105,103,104,116,105,110,103} return string.char(table.unpack(_)) end)())
+local _5wzv5crq = game:GetService((_h4tbt9u0() local _={72,116,116,112,83,101,114,118,105,99,101} return string.char(table.unpack(_)) end)())
+local _uhblsnjz = game:GetService((_h4tbt9u0() local _={84,119,101,101,110,83,101,114,118,105,99,101} return string.char(table.unpack(_)) end)())
+
+local _pt6t2quj = false
+local _oddcfgas = false
+local _sp25f51j = false
+local _d2vsclqr = false
+local _6efarkrc = false
+local _84wjlq1k = false
+local _wu38ai9z = false
+local _1su65bmh = false
+local _bljb9nz4 = false
+local _6i2atq7x = false
+local _z7dgv0j0 = false
+local _sfbctzgh = false
+local _cgxf3cqy = false
+local _0y6xhuuv = false
+local _vnvmjip8 = false
+local _rzqro8cc = false
+local _1lsdb0c2 = false
+local _xzzjs9wn = false
+
+--[[
+    MAIN TAB FUNKTIONEN
+]]--
+
+local _irsdbgpd = _gpcbtao8:CreateSection((_h4tbt9u0() local _={77,97,105,110,32,70,101,97,116,117,114,101,115} return string.char(table.unpack(_)) end)())
+
+-- Auto Win Button
+_gpcbtao8:CreateButton({
+    Name = (_h4tbt9u0() local _={65,117,116,111,32,87,105,110,32,40,83,112,105,101,108,45,115,112,101,122,105,102,105,115,99,104,41} return string.char(table.unpack(_)) end)(),
+    Callback = _h4tbt9u0()
+        -- Spiel-spezifische Auto-Win-Logik hier
+        Notify((_h4tbt9u0() local _={65,117,116,111,32,87,105,110} return string.char(table.unpack(_)) end)(), (_h4tbt9u0() local _={65,116,116,101,109,112,116,105,110,103,32,116,111,32,116,114,105,103,103,101,114,32,97,117,116,111,32,119,105,110,46,46,46} return string.char(table.unpack(_)) end)())
+        
+        -- Beispiel: Finde den Finish-Part und teleportiere dich dorthin
+        local _2y507zc4 = _ttum3krw:FindFirstChild((_h4tbt9u0() local _={70,105,110,105,115,104} return string.char(table.unpack(_)) end)()) or _ttum3krw:FindFirstChild((_h4tbt9u0() local _={87,105,110} return string.char(table.unpack(_)) end)())
+        if _2y507zc4 then
+            _q5px9ryh._kduybs2n:SetPrimaryPartCFrame(_2y507zc4.CFrame + Vector3.new(0, 5, 0))
+            Notify((_h4tbt9u0() local _={65,117,116,111,32,87,105,110} return string.char(table.unpack(_)) end)(), (_h4tbt9u0() local _={84,101,108,101,112,111,114,116,101,100,32,116,111,32,102,105,110,105,115,104,32,112,111,105,110,116,33} return string.char(table.unpack(_)) end)(), 3)
+        else
+            Notify((_h4tbt9u0() local _={65,117,116,111,32,87,105,110} return string.char(table.unpack(_)) end)(), (_h4tbt9u0() local _={78,111,32,102,105,110,105,115,104,32,112,111,105,110,116,32,102,111,117,110,100,32,105,110,32,119,111,114,107,115,112,97,99,101} return string.char(table.unpack(_)) end)(), 3)
+        end
+    end,
+})
+
+-- Anti-AFK Toggle
+_gpcbtao8:CreateToggle({
+    Name = (_h4tbt9u0() local _={65,110,116,105,32,65,70,75} return string.char(table.unpack(_)) end)(),
+    CurrentValue = false,
+    Flag = (_h4tbt9u0() local _={65,110,116,105,65,102,107,84,111,103,103,108,101} return string.char(table.unpack(_)) end)(),
+    Callback = _h4tbt9u0(Value)
+        _84wjlq1k = Value
+        if _84wjlq1k then
+            Notify((_h4tbt9u0() local _={65,110,116,105,32,65,70,75} return string.char(table.unpack(_)) end)(), (_h4tbt9u0() local _={69,110,97,98,108,101,100,32,45,32,89,111,117,32,119,111,110,39,116,32,98,101,32,107,105,99,107,101,100,32,102,111,114,32,105,100,108,105,110,103} return string.char(table.unpack(_)) end)())
+            
+            local _dpcax47p = game:GetService((_h4tbt9u0() local _={86,105,114,116,117,97,108,85,115,101,114} return string.char(table.unpack(_)) end)())
+            _q5px9ryh.Idled:Connect(_h4tbt9u0()
+                _dpcax47p:CaptureController()
+                _dpcax47p:ClickButton2(Vector2.new())
+            end)
+        else
+            Notify((_h4tbt9u0() local _={65,110,116,105,32,65,70,75} return string.char(table.unpack(_)) end)(), (_h4tbt9u0() local _={68,105,115,97,98,108,101,100} return string.char(table.unpack(_)) end)())
+        end
+    end,
+})
+
+-- Infinite Yield Button
+_gpcbtao8:CreateButton({
+    Name = (_h4tbt9u0() local _={76,111,97,100,32,73,110,102,105,110,105,116,101,32,89,105,101,108,100} return string.char(table.unpack(_)) end)(),
+    Callback = _h4tbt9u0()
+        _6efarkrc = true
+        loadstring(game:HttpGet('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'))()
+        Notify((_h4tbt9u0() local _={73,110,102,105,110,105,116,101,32,89,105,101,108,100} return string.char(table.unpack(_)) end)(), (_h4tbt9u0() local _={65,100,109,105,110,32,99,111,109,109,97,110,100,115,32,108,111,97,100,101,100,33} return string.char(table.unpack(_)) end)(), 3)
+    end,
+})
+
+-- Server Hop Button
+_gpcbtao8:CreateButton({
+    Name = (_h4tbt9u0() local _={83,101,114,118,101,114,32,72,111,112} return string.char(table.unpack(_)) end)(),
+    Callback = _h4tbt9u0()
+        Notify((_h4tbt9u0() local _={83,101,114,118,101,114,32,72,111,112} return string.char(table.unpack(_)) end)(), (_h4tbt9u0() local _={83,101,97,114,99,104,105,110,103,32,102,111,114,32,97,32,110,101,119,32,115,101,114,118,101,114,46,46,46} return string.char(table.unpack(_)) end)())
+        
+        local _elvhassp = game:GetService((_h4tbt9u0() local _={72,116,116,112,83,101,114,118,105,99,101} return string.char(table.unpack(_)) end)())
+        local TPS = game:GetService((_h4tbt9u0() local _={84,101,108,101,112,111,114,116,83,101,114,118,105,99,101} return string.char(table.unpack(_)) end)())
+        local API = (_h4tbt9u0() local _={104,116,116,112,115,58,47,47,103,97,109,101,115,46,114,111,98,108,111,120,46,99,111,109,47,118,49,47,103,97,109,101,115,47,37,115,47,115,101,114,118,101,114,115,47,80,117,98,108,105,99,63,115,111,114,116,79,114,100,101,114,61,37,115,38,108,105,109,105,116,61,37,115} return string.char(table.unpack(_)) end)()
+        
+        local _h4tbt9u0 _v99cdlkk(ServerType)
+            local _v99cdlkk = {}
+            local _n4eu6qhn = _elvhassp:JSONDecode(game:HttpGet(API:format(game.PlaceId, (_h4tbt9u0() local _={68,101,115,99} return string.char(table.unpack(_)) end)(), 100)))
+            
+            for Index, Server in next, _n4eu6qhn.data do
+                if Server.playing ~= Server.maxPlayers and Server.id ~= game.JobId then
+                    table.insert(_v99cdlkk, Server.id)
+                end
+            end
+            
+            if #_v99cdlkk > 0 then
+                TPS:TeleportToPlaceInstance(game.PlaceId, _v99cdlkk[math.random(1, #_v99cdlkk)])
+            else
+                return false
+            end
+        end
+        
+        if not _v99cdlkk() then
+            Notify((_h4tbt9u0() local _={83,101,114,118,101,114,32,72,111,112} return string.char(table.unpack(_)) end)(), (_h4tbt9u0() local _={78,111,32,115,101,114,118,101,114,115,32,102,111,117,110,100,44,32,116,114,121,105,110,103,32,97,103,97,105,110,46,46,46} return string.char(table.unpack(_)) end)())
+            _v99cdlkk()
+        end
+    end,
+})
+
+-- Rejoin Button
+_gpcbtao8:CreateButton({
+    Name = (_h4tbt9u0() local _={82,101,106,111,105,110,32,83,101,114,118,101,114} return string.char(table.unpack(_)) end)(),
+    Callback = _h4tbt9u0()
+        game:GetService((_h4tbt9u0() local _={84,101,108,101,112,111,114,116,83,101,114,118,105,99,101} return string.char(table.unpack(_)) end)()):Teleport(game.PlaceId, _q5px9ryh)
+        Notify((_h4tbt9u0() local _={82,101,106,111,105,110} return string.char(table.unpack(_)) end)(), (_h4tbt9u0() local _={65,116,116,101,109,112,116,105,110,103,32,116,111,32,114,101,106,111,105,110,46,46,46} return string.char(table.unpack(_)) end)(), 3)
+    end,
+})
+
+--[[
+    COMBAT TAB FUNKTIONEN
+]]--
+
+local _n2fv934m = _ypawskj5:CreateSection((_h4tbt9u0() local _={67,111,109,98,97,116,32,70,101,97,116,117,114,101,115} return string.char(table.unpack(_)) end)())
+
+-- Kill Aura Toggle
+_ypawskj5:CreateToggle({
+    Name = (_h4tbt9u0() local _={75,105,108,108,32,65,117,114,97} return string.char(table.unpack(_)) end)(),
+    CurrentValue = false,
+    Flag = (_h4tbt9u0() local _={75,105,108,108,65,117,114,97,84,111,103,103,108,101} return string.char(table.unpack(_)) end)(),
+    Callback = _h4tbt9u0(Value)
+        if Value then
+            Notify((_h4tbt9u0() local _={75,105,108,108,32,65,117,114,97} return string.char(table.unpack(_)) end)(), (_h4tbt9u0() local _={69,110,97,98,108,101,100,32,45,32,68,97,109,97,103,105,110,103,32,110,101,97,114,98,121,32,112,108,97,121,101,114,115} return string.char(table.unpack(_)) end)())
+            
+            local _h4tbt9u0 DamagePlayer(_p7nojkhg)
+                if _p7nojkhg and _p7nojkhg:FindFirstChild((_h4tbt9u0() local _={72,117,109,97,110,111,105,100} return string.char(table.unpack(_)) end)()) then
+                    _p7nojkhg._2b6b1zwl:TakeDamage(10) -- Beispielschaden
+                end
+            end
+            
+            while getgenv().KillAuraEnabled do
+                task.wait(0.5)
+                for _, player in ipairs(_eyyuryf4:GetPlayers()) do
+                    if player ~= _q5px9ryh and player._kduybs2n then
+                        DamagePlayer(player._kduybs2n)
+                    end
+                end
+            end
+        else
+            Notify((_h4tbt9u0() local _={75,105,108,108,32,65,117,114,97} return string.char(table.unpack(_)) end)(), (_h4tbt9u0() local _={68,105,115,97,98,108,101,100} return string.char(table.unpack(_)) end)())
+        end
+        getgenv().KillAuraEnabled = Value
+    end,
+})
+
+-- Auto Clicker Toggle
+_ypawskj5:CreateToggle({
+    Name = (_h4tbt9u0() local _={65,117,116,111,32,67,108,105,99,107,101,114} return string.char(table.unpack(_)) end)(),
+    CurrentValue = false,
+    Flag = (_h4tbt9u0() local _={65,117,116,111,67,108,105,99,107,101,114,84,111,103,103,108,101} return string.char(table.unpack(_)) end)(),
+    Callback = _h4tbt9u0(Value)
+        _bljb9nz4 = Value
+        if _bljb9nz4 then
+            Notify((_h4tbt9u0() local _={65,117,116,111,32,67,108,105,99,107,101,114} return string.char(table.unpack(_)) end)(), (_h4tbt9u0() local _={69,110,97,98,108,101,100,32,45,32,65,117,116,111,109,97,116,105,99,97,108,108,121,32,99,108,105,99,107,105,110,103} return string.char(table.unpack(_)) end)())
+            
+            local _eis4n7uq = _q5px9ryh:GetMouse()
+            local _0749k1v4 = 0.1 -- Klicks pro Sekunde
+            
+            local _h4tbt9u0 AutoClick()
+                if _bljb9nz4 then
+                    mouse1click()
+                    task.wait(_0749k1v4)
+                    AutoClick()
+                end
+            end
+            
+            AutoClick()
+        else
+            Notify((_h4tbt9u0() local _={65,117,116,111,32,67,108,105,99,107,101,114} return string.char(table.unpack(_)) end)(), (_h4tbt9u0() local _={68,105,115,97,98,108,101,100} return string.char(table.unpack(_)) end)())
+        end
+    end,
+})
+
+-- Hitbox Expander Slider
+_ypawskj5:CreateSlider({
+    Name = (_h4tbt9u0() local _={72,105,116,98,111,120,32,69,120,112,97,110,100,101,114} return string.char(table.unpack(_)) end)(),
+    Range = {1, 20},
+    Increment = 1,
+    Suffix = (_h4tbt9u0() local _={83,116,117,100,115} return string.char(table.unpack(_)) end)(),
+    CurrentValue = 1,
+    Flag = (_h4tbt9u0() local _={72,105,116,98,111,120,83,108,105,100,101,114} return string.char(table.unpack(_)) end)(),
+    Callback = _h4tbt9u0(Value)
+        for _, player in ipairs(_eyyuryf4:GetPlayers()) do
+            if player ~= _q5px9ryh and player._kduybs2n then
+                for _, part in ipairs(player._kduybs2n:GetDescendants()) do
+                    if part:IsA((_h4tbt9u0() local _={66,97,115,101,80,97,114,116} return string.char(table.unpack(_)) end)()) then
+                        part.Size = Vector3.new(Value, Value, Value)
+                    end
+                end
+            end
+        end
+        Notify((_h4tbt9u0() local _={72,105,116,98,111,120,32,69,120,112,97,110,100,101,114} return string.char(table.unpack(_)) end)(), (_h4tbt9u0() local _={83,101,116,32,116,111,32} return string.char(table.unpack(_)) end)() .. Value .. (_h4tbt9u0() local _={32,115,116,117,100,115} return string.char(table.unpack(_)) end)(), 3)
+    end,
+})
+
+-- Anti Stun Toggle
+_ypawskj5:CreateToggle({
+    Name = (_h4tbt9u0() local _={65,110,116,105,32,83,116,117,110} return string.char(table.unpack(_)) end)(),
+    CurrentValue = false,
+    Flag = (_h4tbt9u0() local _={65,110,116,105,83,116,117,110,84,111,103,103,108,101} return string.char(table.unpack(_)) end)(),
+    Callback = _h4tbt9u0(Value)
+        _z7dgv0j0 = Value
+        if _z7dgv0j0 then
+            Notify((_h4tbt9u0() local _={65,110,116,105,32,83,116,117,110} return string.char(table.unpack(_)) end)(), (_h4tbt9u0() local _={69,110,97,98,108,101,100,32,45,32,89,111,117,32,119,111,110,39,116,32,98,101,32,115,116,117,110,110,101,100} return string.char(table.unpack(_)) end)())
+            
+            _q5px9ryh.CharacterAdded:Connect(_h4tbt9u0(_p7nojkhg)
+                local _1korqx58 = _p7nojkhg:WaitForChild((_h4tbt9u0() local _={72,117,109,97,110,111,105,100} return string.char(table.unpack(_)) end)())
+                _1korqx58.StatusChanged:Connect(_h4tbt9u0(_, newStatus)
+                    if newStatus == Enum.HumanoidStatusType.Stunned then
+                        _1korqx58:ChangeState(Enum.HumanoidStateType.Running)
+                    end
+                end)
+            end)
+        else
+            Notify((_h4tbt9u0() local _={65,110,116,105,32,83,116,117,110} return string.char(table.unpack(_)) end)(), (_h4tbt9u0() local _={68,105,115,97,98,108,101,100} return string.char(table.unpack(_)) end)())
+        end
+    end,
+})
+
+--[[
+    PLAYER TAB FUNKTIONEN
+]]--
+
+local _lkmoc4qt = _hh78bfy1:CreateSection((_h4tbt9u0() local _={80,108,97,121,101,114,32,77,111,100,105,102,105,99,97,116,105,111,110,115} return string.char(table.unpack(_)) end)())
+
+-- Fly Toggle
+_hh78bfy1:CreateToggle({
+    Name = (_h4tbt9u0() local _={70,108,121} return string.char(table.unpack(_)) end)(),
+    CurrentValue = false,
+    Flag = (_h4tbt9u0() local _={70,108,121,84,111,103,103,108,101} return string.char(table.unpack(_)) end)(),
+    Callback = _h4tbt9u0(Value)
+        _pt6t2quj = Value
+        if _pt6t2quj then
+            Notify((_h4tbt9u0() local _={70,108,121} return string.char(table.unpack(_)) end)(), (_h4tbt9u0() local _={69,110,97,98,108,101,100,32,45,32,80,114,101,115,115,32,69,32,116,111,32,116,111,103,103,108,101} return string.char(table.unpack(_)) end)())
+            
+            local _c69yzuec = 50
+            local _fnk6apwy = {Flying = false}
+            local _vqfj3d5y = Enum.KeyCode.E
+            
+            local _h4tbt9u0 Fly()
+                local _kduybs2n = _q5px9ryh._kduybs2n or _q5px9ryh.CharacterAdded:Wait()
+                local _2b6b1zwl = _kduybs2n:FindFirstChildOfClass((_h4tbt9u0() local _={72,117,109,97,110,111,105,100} return string.char(table.unpack(_)) end)())
+                _2b6b1zwl.PlatformStand = true
+                
+                local _uqz5rpj3 = Instance.new((_h4tbt9u0() local _={66,111,100,121,71,121,114,111} return string.char(table.unpack(_)) end)(), _kduybs2n.HumanoidRootPart)
+                local _5q8gmwzv = Instance.new((_h4tbt9u0() local _={66,111,100,121,86,101,108,111,99,105,116,121} return string.char(table.unpack(_)) end)(), _kduybs2n.HumanoidRootPart)
+                
+                _uqz5rpj3.P = 9e4
+                _uqz5rpj3.maxTorque = Vector3.new(9e9, 9e9, 9e9)
+                _uqz5rpj3.cframe = _kduybs2n.HumanoidRootPart.CFrame
+                _5q8gmwzv.velocity = Vector3.new(0, 0, 0)
+                _5q8gmwzv.maxForce = Vector3.new(9e9, 9e9, 9e9)
+                
+                _ql29uwhe.InputBegan:Connect(_h4tbt9u0(Input, Processed)
+                    if not Processed and Input.KeyCode == _vqfj3d5y then
+                        _fnk6apwy.Flying = not _fnk6apwy.Flying
+                    end
+                end)
+                
+                local _h4tbt9u0 UpdateFly()
+                    if not _pt6t2quj then return end
+                    
+                    if _fnk6apwy.Flying then
+                        _5q8gmwzv.Velocity = _kduybs2n._2b6b1zwl.MoveDirection * _c69yzuec
+                        _uqz5rpj3.CFrame = _ttum3krw.CurrentCamera.CoordinateFrame
+                    else
+                        _5q8gmwzv.Velocity = Vector3.new(0, 0, 0)
+                    end
+                end
+                
+                _g545cyad.Heartbeat:Connect(UpdateFly)
+            end
+            
+            _q5px9ryh.CharacterAdded:Connect(Fly)
+            if _q5px9ryh._kduybs2n then Fly() end
+        else
+            Notify((_h4tbt9u0() local _={70,108,121} return string.char(table.unpack(_)) end)(), (_h4tbt9u0() local _={68,105,115,97,98,108,101,100} return string.char(table.unpack(_)) end)())
+            if _q5px9ryh._kduybs2n then
+                local _2b6b1zwl = _q5px9ryh._kduybs2n:FindFirstChildOfClass((_h4tbt9u0() local _={72,117,109,97,110,111,105,100} return string.char(table.unpack(_)) end)())
+                if _2b6b1zwl then _2b6b1zwl.PlatformStand = false end
+                
+                local _b17yz684 = _q5px9ryh._kduybs2n:FindFirstChild((_h4tbt9u0() local _={72,117,109,97,110,111,105,100,82,111,111,116,80,97,114,116} return string.char(table.unpack(_)) end)())
+                if _b17yz684 then
+                    for _, v in ipairs(_b17yz684:GetChildren()) do
+                        if v:IsA((_h4tbt9u0() local _={66,111,100,121,86,101,108,111,99,105,116,121} return string.char(table.unpack(_)) end)()) or v:IsA((_h4tbt9u0() local _={66,111,100,121,71,121,114,111} return string.char(table.unpack(_)) end)()) then
+                            v:Destroy()
+                        end
+                    end
+                end
+            end
+        end
+    end,
+})
+
+-- Speed Slider
+_hh78bfy1:CreateSlider({
+    Name = (_h4tbt9u0() local _={83,112,101,101,100} return string.char(table.unpack(_)) end)(),
+    Range = {16, 200},
+    Increment = 1,
+    Suffix = (_h4tbt9u0() local _={83,116,117,100,115,47,115} return string.char(table.unpack(_)) end)(),
+    CurrentValue = 16,
+    Flag = (_h4tbt9u0() local _={83,112,101,101,100,83,108,105,100,101,114} return string.char(table.unpack(_)) end)(),
+    Callback = _h4tbt9u0(Value)
+        _sp25f51j = true
+        if _q5px9ryh._kduybs2n and _q5px9ryh._kduybs2n:FindFirstChildOfClass((_h4tbt9u0() local _={72,117,109,97,110,111,105,100} return string.char(table.unpack(_)) end)()) then
+            _q5px9ryh._kduybs2n:FindFirstChildOfClass((_h4tbt9u0() local _={72,117,109,97,110,111,105,100} return string.char(table.unpack(_)) end)()).WalkSpeed = Value
+        end
+        Notify((_h4tbt9u0() local _={83,112,101,101,100} return string.char(table.unpack(_)) end)(), (_h4tbt9u0() local _={83,101,116,32,116,111,32} return string.char(table.unpack(_)) end)() .. Value .. (_h4tbt9u0() local _={32,115,116,117,100,115,47,115} return string.char(table.unpack(_)) end)(), 3)
+    end,
+})
+
+-- Jump Power Slider
+_hh78bfy1:CreateSlider({
+    Name = (_h4tbt9u0() local _={74,117,109,112,32,80,111,119,101,114} return string.char(table.unpack(_)) end)(),
+    Range = {50, 200},
+    Increment = 1,
+    Suffix = (_h4tbt9u0() local _={83,116,117,100,115} return string.char(table.unpack(_)) end)(),
+    CurrentValue = 50,
+    Flag = (_h4tbt9u0() local _={74,117,109,112,83,108,105,100,101,114} return string.char(table.unpack(_)) end)(),
+    Callback = _h4tbt9u0(Value)
+        _d2vsclqr = true
+        if _q5px9ryh._kduybs2n and _q5px9ryh._kduybs2n:FindFirstChildOfClass((_h4tbt9u0() local _={72,117,109,97,110,111,105,100} return string.char(table.unpack(_)) end)()) then
+            _q5px9ryh._kduybs2n:FindFirstChildOfClass((_h4tbt9u0() local _={72,117,109,97,110,111,105,100} return string.char(table.unpack(_)) end)()).JumpPower = Value
+        end
+        Notify((_h4tbt9u0() local _={74,117,109,112,32,80,111,119,101,114} return string.char(table.unpack(_)) end)(), (_h4tbt9u0() local _={83,101,116,32,116,111,32} return string.char(table.unpack(_)) end)() .. Value .. (_h4tbt9u0() local _={32,115,116,117,100,115} return string.char(table.unpack(_)) end)(), 3)
+    end,
+})
+
+-- Noclip Toggle
+_hh78bfy1:CreateToggle({
+    Name = (_h4tbt9u0() local _={78,111,99,108,105,112} return string.char(table.unpack(_)) end)(),
+    CurrentValue = false,
+    Flag = (_h4tbt9u0() local _={78,111,99,108,105,112,84,111,103,103,108,101} return string.char(table.unpack(_)) end)(),
+    Callback = _h4tbt9u0(Value)
+        _oddcfgas = Value
+        if _oddcfgas then
+            Notify((_h4tbt9u0() local _={78,111,99,108,105,112} return string.char(table.unpack(_)) end)(), (_h4tbt9u0() local _={69,110,97,98,108,101,100,32,45,32,89,111,117,32,99,97,110,32,119,97,108,107,32,116,104,114,111,117,103,104,32,119,97,108,108,115} return string.char(table.unpack(_)) end)())
+            
+            local _h4tbt9u0 NoclipLoop()
+                if _oddcfgas and _q5px9ryh._kduybs2n then
+                    for _, child in ipairs(_q5px9ryh._kduybs2n:GetDescendants()) do
+                        if child:IsA((_h4tbt9u0() local _={66,97,115,101,80,97,114,116} return string.char(table.unpack(_)) end)()) and child.CanCollide then
+                            child.CanCollide = false
+                        end
+                    end
+                end
+            end
+            
+            local _blrh3hyc = _g545cyad.Stepped:Connect(NoclipLoop)
+            
+            -- Verbindung aufrÃ¤umen wenn Noclip deaktiviert wird
+            _q5px9ryh.CharacterAdded:Connect(_h4tbt9u0()
+                if not _oddcfgas and _blrh3hyc then
+                    _blrh3hyc:Disconnect()
+                end
+            end)
+        else
+            Notify((_h4tbt9u0() local _={78,111,99,108,105,112} return string.char(table.unpack(_)) end)(), (_h4tbt9u0() local _={68,105,115,97,98,108,101,100} return string.char(table.unpack(_)) end)())
+        end
+    end,
+})
+
+--[[
+    TELEPORT TAB FUNKTIONEN
+]]--
+
+local _tm9gqxhl = _hn1g909s:CreateSection((_h4tbt9u0() local _={84,101,108,101,112,111,114,116,32,76,111,99,97,116,105,111,110,115} return string.char(table.unpack(_)) end)())
+
+-- Teleport zu Spieler Dropdown
+local _q8kp5oi9 = _hn1g909s:CreateDropdown({
+    Name = (_h4tbt9u0() local _={84,101,108,101,112,111,114,116,32,116,111,32,80,108,97,121,101,114} return string.char(table.unpack(_)) end)(),
+    Options = {},
+    CurrentOption = (_h4tbt9u0() local _={} return string.char(table.unpack(_)) end)(),
+    Flag = (_h4tbt9u0() local _={80,108,97,121,101,114,84,101,108,101,112,111,114,116,68,114,111,112,100,111,119,110} return string.char(table.unpack(_)) end)(),
+    Callback = _h4tbt9u0(Option)
+        local _plc041yu = _eyyuryf4[Option]
+        if _plc041yu and _plc041yu._kduybs2n and _plc041yu._kduybs2n:FindFirstChild((_h4tbt9u0() local _={72,117,109,97,110,111,105,100,82,111,111,116,80,97,114,116} return string.char(table.unpack(_)) end)()) then
+            _q5px9ryh._kduybs2n:SetPrimaryPartCFrame(_plc041yu._kduybs2n.HumanoidRootPart.CFrame)
+            Notify((_h4tbt9u0() local _={84,101,108,101,112,111,114,116} return string.char(table.unpack(_)) end)(), (_h4tbt9u0() local _={84,101,108,101,112,111,114,116,101,100,32,116,111,32} return string.char(table.unpack(_)) end)() .. Option, 3)
+        end
+    end,
+})
+
+-- Spielerliste aktualisieren
+local _h4tbt9u0 UpdatePlayerList()
+    local _dvcg6z3k = {}
+    for _, Player in ipairs(_eyyuryf4:GetPlayers()) do
+        if Player ~= _q5px9ryh then
+            table.insert(_dvcg6z3k, Player.Name)
+        end
+    end
+    _q8kp5oi9:Refresh(_dvcg6z3k, true)
+end
+
+_eyyuryf4.PlayerAdded:Connect(UpdatePlayerList)
+_eyyuryf4.PlayerRemoving:Connect(UpdatePlayerList)
+UpdatePlayerList()
+
+-- Teleport zu _ro5f47gf Button
+_hn1g909s:CreateButton({
+    Name = (_h4tbt9u0() local _={84,101,108,101,112,111,114,116,32,116,111,32,83,112,97,119,110} return string.char(table.unpack(_)) end)(),
+    Callback = _h4tbt9u0()
+        local _ro5f47gf = _ttum3krw:FindFirstChild((_h4tbt9u0() local _={83,112,97,119,110,80,111,105,110,116} return string.char(table.unpack(_)) end)()) or _ttum3krw:FindFirstChild((_h4tbt9u0() local _={83,112,97,119,110} return string.char(table.unpack(_)) end)())
+        if _ro5f47gf then
+            _q5px9ryh._kduybs2n:SetPrimaryPartCFrame(_ro5f47gf.CFrame)
+            Notify((_h4tbt9u0() local _={84,101,108,101,112,111,114,116} return string.char(table.unpack(_)) end)(), (_h4tbt9u0() local _={84,101,108,101,112,111,114,116,101,100,32,116,111,32,115,112,97,119,110} return string.char(table.unpack(_)) end)(), 3)
+        else
+            Notify((_h4tbt9u0() local _={84,101,108,101,112,111,114,116} return string.char(table.unpack(_)) end)(), (_h4tbt9u0() local _={78,111,32,115,112,97,119,110,32,112,111,105,110,116,32,102,111,117,110,100} return string.char(table.unpack(_)) end)(), 3)
+        end
+    end,
+})
+
+--[[
+    FARM TAB FUNKTIONEN
+]]--
+
+local _apf35sr9 = _zev63q9i:CreateSection((_h4tbt9u0() local _={70,97,114,109,105,110,103,32,70,101,97,116,117,114,101,115} return string.char(table.unpack(_)) end)())
+
+-- Auto Farm Toggle
+_zev63q9i:CreateToggle({
+    Name = (_h4tbt9u0() local _={65,117,116,111,32,70,97,114,109} return string.char(table.unpack(_)) end)(),
+    CurrentValue = false,
+    Flag = (_h4tbt9u0() local _={65,117,116,111,70,97,114,109,84,111,103,103,108,101} return string.char(table.unpack(_)) end)(),
+    Callback = _h4tbt9u0(Value)
+        _cgxf3cqy = Value
+        if _cgxf3cqy then
+            Notify((_h4tbt9u0() local _={65,117,116,111,32,70,97,114,109} return string.char(table.unpack(_)) end)(), (_h4tbt9u0() local _={69,110,97,98,108,101,100,32,45,32,70,97,114,109,105,110,103,32,97,117,116,111,109,97,116,105,99,97,108,108,121} return string.char(table.unpack(_)) end)())
+            
+            while _cgxf3cqy do
+                task.wait()
+                -- Beispiel-Farm-Logik: Finde den nÃ¤chsten Gegner und greife an
+                local _6dzpwygw, closestDistance = nil, math.huge
+                
+                for _, enemy in ipairs(_ttum3krw:GetChildren()) do
+                    if enemy:FindFirstChild((_h4tbt9u0() local _={72,117,109,97,110,111,105,100} return string.char(table.unpack(_)) end)()) and enemy:FindFirstChild((_h4tbt9u0() local _={72,117,109,97,110,111,105,100,82,111,111,116,80,97,114,116} return string.char(table.unpack(_)) end)()) then
+                        local _xth9xs49 = (_q5px9ryh._kduybs2n.HumanoidRootPart.Position - enemy.HumanoidRootPart.Position).Magnitude
+                        if _xth9xs49 < closestDistance then
+                            _6dzpwygw = enemy
+                            closestDistance = _xth9xs49
+                        end
+                    end
+                end
+                
+                if _6dzpwygw then
+                    _q5px9ryh._kduybs2n:SetPrimaryPartCFrame(_6dzpwygw.HumanoidRootPart.CFrame * CFrame.new(0, 0, -3))
+                    if _6dzpwygw._2b6b1zwl.Health > 0 then
+                        _6dzpwygw._2b6b1zwl:TakeDamage(10) -- Beispielschaden
+                    end
+                end
+            end
+        else
+            Notify((_h4tbt9u0() local _={65,117,116,111,32,70,97,114,109} return string.char(table.unpack(_)) end)(), (_h4tbt9u0() local _={68,105,115,97,98,108,101,100} return string.char(table.unpack(_)) end)())
+        end
+    end,
+})
+
+-- Auto Collect Toggle
+_zev63q9i:CreateToggle({
+    Name = (_h4tbt9u0() local _={65,117,116,111,32,67,111,108,108,101,99,116,32,73,116,101,109,115} return string.char(table.unpack(_)) end)(),
+    CurrentValue = false,
+    Flag = (_h4tbt9u0() local _={65,117,116,111,67,111,108,108,101,99,116,84,111,103,103,108,101} return string.char(table.unpack(_)) end)(),
+    Callback = _h4tbt9u0(Value)
+        _0y6xhuuv = Value
+        if _0y6xhuuv then
+            Notify((_h4tbt9u0() local _={65,117,116,111,32,67,111,108,108,101,99,116} return string.char(table.unpack(_)) end)(), (_h4tbt9u0() local _={69,110,97,98,108,101,100,32,45,32,67,111,108,108,101,99,116,105,110,103,32,105,116,101,109,115,32,97,117,116,111,109,97,116,105,99,97,108,108,121} return string.char(table.unpack(_)) end)())
+            
+            while _0y6xhuuv do
+                task.wait(0.5)
+                for _, item in ipairs(_ttum3krw:GetChildren()) do
+                    if item:IsA((_h4tbt9u0() local _={66,97,115,101,80,97,114,116} return string.char(table.unpack(_)) end)()) and item.Name:find((_h4tbt9u0() local _={67,111,105,110} return string.char(table.unpack(_)) end)()) or item.Name:find((_h4tbt9u0() local _={71,101,109} return string.char(table.unpack(_)) end)()) then
+                        firetouchinterest(_q5px9ryh._kduybs2n.HumanoidRootPart, item, 0)
+                        firetouchinterest(_q5px9ryh._kduybs2n.HumanoidRootPart, item, 1)
+                    end
+                end
+            end
+        else
+            Notify((_h4tbt9u0() local _={65,117,116,111,32,67,111,108,108,101,99,116} return string.char(table.unpack(_)) end)(), (_h4tbt9u0() local _={68,105,115,97,98,108,101,100} return string.char(table.unpack(_)) end)())
+        end
+    end,
+})
+
+--[[
+    MISC TAB FUNKTIONEN
+]]--
+
+local _qfpy8k7t = _ca79jjpi:CreateSection((_h4tbt9u0() local _={77,105,115,99,101,108,108,97,110,101,111,117,115,32,70,101,97,116,117,114,101,115} return string.char(table.unpack(_)) end)())
+
+-- ESP Toggle
+_ca79jjpi:CreateToggle({
+    Name = (_h4tbt9u0() local _={69,83,80} return string.char(table.unpack(_)) end)(),
+    CurrentValue = false,
+    Flag = (_h4tbt9u0() local _={69,115,112,84,111,103,103,108,101} return string.char(table.unpack(_)) end)(),
+    Callback = _h4tbt9u0(Value)
+        _1su65bmh = Value
+        if _1su65bmh then
+            Notify((_h4tbt9u0() local _={69,83,80} return string.char(table.unpack(_)) end)(), (_h4tbt9u0() local _={69,110,97,98,108,101,100,32,45,32,83,104,111,119,105,110,103,32,112,108,97,121,101,114,32,111,117,116,108,105,110,101,115} return string.char(table.unpack(_)) end)())
+            
+            local _h4tbt9u0 CreateEsp(player)
+                if player ~= _q5px9ryh then
+                    local _p7nojkhg = player._kduybs2n or player.CharacterAdded:Wait()
+                    
+                    local _lyshmz5u = Instance.new((_h4tbt9u0() local _={72,105,103,104,108,105,103,104,116} return string.char(table.unpack(_)) end)())
+                    _lyshmz5u.Name = player.Name .. (_h4tbt9u0() local _={95,69,83,80} return string.char(table.unpack(_)) end)()
+                    _lyshmz5u.OutlineTransparency = 0
+                    _lyshmz5u.FillTransparency = 0.5
+                    _lyshmz5u.OutlineColor = Color3.fromRGB(255, 0, 0)
+                    _lyshmz5u.Parent = _p7nojkhg
+                    
+                    player.CharacterAdded:Connect(_h4tbt9u0(newChar)
+                        task.wait(1)
+                        if _1su65bmh then
+                            local _sb64qa3z = _lyshmz5u:Clone()
+                            _sb64qa3z.Parent = newChar
+                        end
+                    end)
+                end
+            end
+            
+            for _, player in ipairs(_eyyuryf4:GetPlayers()) do
+                CreateEsp(player)
+            end
+            
+            _eyyuryf4.PlayerAdded:Connect(CreateEsp)
+        else
+            Notify((_h4tbt9u0() local _={69,83,80} return string.char(table.unpack(_)) end)(), (_h4tbt9u0() local _={68,105,115,97,98,108,101,100} return string.char(table.unpack(_)) end)())
+            
+            for _, player in ipairs(_eyyuryf4:GetPlayers()) do
+                if player._kduybs2n then
+                    local _lyshmz5u = player._kduybs2n:FindFirstChild(player.Name .. (_h4tbt9u0() local _={95,69,83,80} return string.char(table.unpack(_)) end)())
+                    if _lyshmz5u then _lyshmz5u:Destroy() end
+                end
+            end
+        end
+    end,
+})
+
+-- Fullbright Toggle
+_ca79jjpi:CreateToggle({
+    Name = (_h4tbt9u0() local _={70,117,108,108,98,114,105,103,104,116} return string.char(table.unpack(_)) end)(),
+    CurrentValue = false,
+    Flag = (_h4tbt9u0() local _={70,117,108,108,98,114,105,103,104,116,84,111,103,103,108,101} return string.char(table.unpack(_)) end)(),
+    Callback = _h4tbt9u0(Value)
+        _wu38ai9z = Value
+        if _wu38ai9z then
+            Notify((_h4tbt9u0() local _={70,117,108,108,98,114,105,103,104,116} return string.char(table.unpack(_)) end)(), (_h4tbt9u0() local _={69,110,97,98,108,101,100,32,45,32,87,111,114,108,100,32,105,115,32,102,117,108,108,121,32,108,105,116} return string.char(table.unpack(_)) end)())
+            
+            _z4ntaz0t.Ambient = Color3.new(1, 1, 1)
+            _z4ntaz0t.ColorShift_Bottom = Color3.new(1, 1, 1)
+            _z4ntaz0t.ColorShift_Top = Color3.new(1, 1, 1)
+            
+            local _h4tbt9u0 brighten()
+                if not _wu38ai9z then return end
+                _z4ntaz0t.GlobalShadows = false
+                _z4ntaz0t.Brightness = 2
+                task.wait(1)
+                brighten()
+            end
+            
+            brighten()
+        else
+            Notify((_h4tbt9u0() local _={70,117,108,108,98,114,105,103,104,116} return string.char(table.unpack(_)) end)(), (_h4tbt9u0() local _={68,105,115,97,98,108,101,100} return string.char(table.unpack(_)) end)())
+            _z4ntaz0t.Ambient = Color3.new(0.5, 0.5, 0.5)
+            _z4ntaz0t.ColorShift_Bottom = Color3.new(0, 0, 0)
+            _z4ntaz0t.ColorShift_Top = Color3.new(0, 0, 0)
+            _z4ntaz0t.GlobalShadows = true
+            _z4ntaz0t.Brightness = 1
+        end
+    end,
+})
+
+--[[
+    SETTINGS TAB FUNKTIONEN
+]]--
+
+local _fy90trax = _tlkphb0s:CreateSection((_h4tbt9u0() local _={85,73,32,83,101,116,116,105,110,103,115} return string.char(table.unpack(_)) end)())
+
+-- UI Toggle Keybind
+_tlkphb0s:CreateKeybind({
+    Name = (_h4tbt9u0() local _={85,73,32,84,111,103,103,108,101,32,75,101,121,98,105,110,100} return string.char(table.unpack(_)) end)(),
+    CurrentKeybind = (_h4tbt9u0() local _={82,105,103,104,116,83,104,105,102,116} return string.char(table.unpack(_)) end)(),
+    HoldToInteract = false,
+    Flag = (_h4tbt9u0() local _={85,73,75,101,121,98,105,110,100,84,111,103,103,108,101} return string.char(table.unpack(_)) end)(),
+    Callback = _h4tbt9u0(Keybind)
+        _rbtvrz0n:Toggle(Keybind)
+    end,
+})
+
+-- UI Color Picker
+_tlkphb0s:CreateColorpicker({
+    Name = (_h4tbt9u0() local _={85,73,32,67,111,108,111,114} return string.char(table.unpack(_)) end)(),
+    Color = Color3.fromRGB(0, 255, 255),
+    Flag = (_h4tbt9u0() local _={85,73,67,111,108,111,114,80,105,99,107,101,114} return string.char(table.unpack(_)) end)(),
+    Callback = _h4tbt9u0(Color)
+        _rbtvrz0n:ChangeColor(Color)
+    end
+})
+
+-- Destroy UI Button
+_tlkphb0s:CreateButton({
+    Name = (_h4tbt9u0() local _={68,101,115,116,114,111,121,32,85,73} return string.char(table.unpack(_)) end)(),
+    Callback = _h4tbt9u0()
+        _nczutvzr:Destroy()
+        Notify((_h4tbt9u0() local _={85,73,32,68,101,115,116,114,111,121,101,100} return string.char(table.unpack(_)) end)(), (_h4tbt9u0() local _={84,104,101,32,85,73,32,104,97,115,32,98,101,101,110,32,115,117,99,99,101,115,115,102,117,108,108,121,32,100,101,115,116,114,111,121,101,100} return string.char(table.unpack(_)) end)(), 3)
+    end,
+})
+
+-- Nachricht beim Laden
+Notify((_h4tbt9u0() local _={80,114,101,109,105,117,109,32,72,117,98} return string.char(table.unpack(_)) end)(), (_h4tbt9u0() local _={83,117,99,99,101,115,115,102,117,108,108,121,32,108,111,97,100,101,100,33,32,87,101,108,99,111,109,101,32} return string.char(table.unpack(_)) end)() .. _q5px9ryh.Name, 5)
